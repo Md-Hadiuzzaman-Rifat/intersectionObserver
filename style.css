@@ -12,5 +12,36 @@ section{
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: 110vh;
+}
+img{
+    width: 150px;
+    border-radius: 10px;
+}
+
+.hidden{
+    opacity: 0;
+    filter:blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0)
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem
+}
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+.logo:nth-child(3){
+    transition-delay: 400ms;
+}
+.logo:nth-child(4){
+    transition-delay: 260ms;
 }
